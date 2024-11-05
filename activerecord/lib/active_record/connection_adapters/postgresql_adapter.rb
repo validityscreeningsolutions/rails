@@ -13,7 +13,7 @@ require 'active_record/connection_adapters/postgresql/database_statements'
 require 'arel/visitors/bind_visitor'
 
 # Make sure we're using pg high enough for PGResult#values
-gem 'pg', '~> 0.15'
+gem "pg", ">= 0.18", "< 2.0"
 require 'pg'
 
 require 'ipaddr'
